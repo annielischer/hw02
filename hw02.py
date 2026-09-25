@@ -1,53 +1,53 @@
-# Task 1.1:
-#  Complete the function "read_two_ints" below:
+# Annie Lischer, 9/25/26
+
+# This function receives two int inputs and returns them
 def read_two_ints():
-    # ADD a Docstring for this function
-    # the return shown below is a placeholder to make sure this runs
-    # TODO: complete the function instead of the line shown below
-    return 1, 2
+    x=input("give me x: ")
+    x=int(x)
+    y=input("give me y: ")
+    y=int(y)
+    return x,y
 
-# Task 2.1:
-#  Complete the function "compute_multadd" below:
+# This function multiplies two ints then prints the product
+# This function adds two ints then prints the sum
+# This function then divides the product and sum and returns it
 def compute_multadd(a, b):
-    # ADD a Docstring for this function
-    # the pass shown below is a placeholder to make sure this runs
-    # TODO: complete the function instead of the line shown below
-    pass
+    numer=a*b
+    print(f"mult result: {numer}")
+    denom=a+b
+    print(f"add result: {denom}")
+    return numer/denom
 
-# Task 3.1:
-#  Complete the function "print_fancy" below:
+# This function prints three variables
 def print_fancy(a, b, ab_multadd):
-    # ADD a Docstring for this function
-    # the pass shown below is a placeholder to make sure this runs
-    # TODO: complete the function instead of the line shown below
-    pass
+    print("*"*16)
+    print("RESULTS:")
+    print(f"first number: {a}")
+    print(f"second number: {b}")
+    print(f"multadd result: {ab_multadd}")
+    print("="*16)
 
+# This function calls previous functions in order to do then print math
 def main ():
-    # ADD a Docstring for this function
-    # Task 1.2:
-    #  Add one line below to call read_two_ints (note that it returns two values)
-    #  the call should provide no arguments
-    #  store the returned values into two variables: x and y
+    # Returns two ints
+    x,y=read_two_ints()
+    # Does math with two ints and returns a third
+    xy_multadd=compute_multadd(x,y)
+    # Prints three variables (ints are variables)
+    print_fancy(x,y,xy_multadd)
 
-    # TODO: add your call instead of this line
-
-    # Task 2.2:
-    #  Add one line below to call multadd (note that it returns one value)
-    #  the call should provide the arguments x, and y you obtained above;
-    #  store the returned value in a variable called xy_multadd
-
-    # TODO: add your call instead of this line
-
-    # Task 3.2:
-    #  Complete The line below to call print_fancy
-    #  the call should provide the arguments x, y, and xy_multadd you obtained above;
-
-    # TODO: add your call instead of this line
-
-
-    # Do not modify this final print statement
     print("The End")
 
 # Do not modify these two lines
 if __name__ == "__main__":
     main()
+
+# [x] you added your name to the top comments of the python file
+# [x] runs without syntax errors (or -50%)
+# [x] adds a few small but informative comments (or -5%)
+# [ ] adds docstrings to each function (or -5%)
+"""I did not do the above because I find the grey easier to read when inside text and also think the
+    that a comment describing a func should be atop and not inside it. Just personal opinions on readability.
+    And also maybe me not entirely understanding what the difference is supposed to be between these two boxes."""
+# [ ] Passes all tests (or lose 15% per missed test). If you do not pass all tests, do not check this box
+# [ ] You checked the correct boxes
