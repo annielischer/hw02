@@ -49,5 +49,5 @@ if __name__ == "__main__":
 """I did not do the above because I find the grey easier to read when inside text and also think the
     that a comment describing a func should be atop and not inside it. Just personal opinions on readability.
     And also maybe me not entirely understanding what the difference is supposed to be between these two boxes."""
-# [ ] Passes all tests (or lose 15% per missed test). If you do not pass all tests, do not check this box
-# [ ] You checked the correct boxes
+# [x] Passes all tests (or lose 15% per missed test). If you do not pass all tests, do not check this box
+# [x] You checked the correct boxes
